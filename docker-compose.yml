@@ -19,7 +19,7 @@ services:
     depends_on:
       - mysqldb
     build: .
-    container_name: tastytap
+    container_name: tastytap-users
     restart: on-failure
     ports:
       - "8081:8081"
