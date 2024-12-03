@@ -93,7 +93,6 @@
 					<excludes>
 						<exclude>br/com/fiap/tastytap_users/TastytapUserApplication.class</exclude>
 						<exclude>br/com/fiap/tastytap_users/presentation/home/**</exclude>
-						<exclude>br/com/fiap/tastytap_users/application/UseCase.class</exclude>
 						<exclude>br/com/fiap/tastytap_users/infraestructure/exceptions/**</exclude>
 						<exclude>br/com/fiap/tastytap_users/presentation/errors/**</exclude>
 						<exclude>**/*Configuration.class</exclude>
