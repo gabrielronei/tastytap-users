@@ -1,6 +1,6 @@
 package br.com.fiap.tastytap_users.presentation.user;
 
-import br.com.fiap.tastytap_users.application.user.UserGateway;
+import br.com.fiap.tastytap_users.applications.user.UserGateway;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

@@ -1,4 +1,4 @@
-package br.com.fiap.tastytap_users.application;
+package br.com.fiap.tastytap_users.applications;
 
 public abstract class UseCase<IN, OUT> {
 

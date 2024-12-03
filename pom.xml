@@ -53,11 +53,6 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
@@ -72,6 +67,20 @@
 			<artifactId>java-jwt</artifactId>
 			<version>4.4.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.20.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>7.20.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -84,8 +93,7 @@
 					<excludes>
 						<exclude>br/com/fiap/tastytap_users/TastytapUserApplication.class</exclude>
 						<exclude>br/com/fiap/tastytap_users/presentation/home/**</exclude>
-						<exclude>br/com/fiap/tastytap_users/application/*</exclude>
-						<exclude>br/com/fiap/tastytap_users/infraestructure/security/**</exclude>
+						<exclude>br/com/fiap/tastytap_users/application/UseCase.class</exclude>
 						<exclude>br/com/fiap/tastytap_users/infraestructure/exceptions/**</exclude>
 						<exclude>br/com/fiap/tastytap_users/presentation/errors/**</exclude>
 						<exclude>**/*Configuration.class</exclude>

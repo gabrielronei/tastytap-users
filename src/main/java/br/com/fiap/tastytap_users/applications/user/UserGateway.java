@@ -1,4 +1,4 @@
-package br.com.fiap.tastytap_users.application.user;
+package br.com.fiap.tastytap_users.applications.user;
 
 import br.com.fiap.tastytap_users.domain.user.CPF;
 import br.com.fiap.tastytap_users.domain.user.User;

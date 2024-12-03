@@ -1,7 +1,7 @@
-package br.com.fiap.tastytap_users.application.user.create;
+package br.com.fiap.tastytap_users.applications.user.create;
 
-import br.com.fiap.tastytap_users.application.user.SimpleUserView;
-import br.com.fiap.tastytap_users.application.user.UserGateway;
+import br.com.fiap.tastytap_users.applications.user.SimpleUserView;
+import br.com.fiap.tastytap_users.applications.user.UserGateway;
 import br.com.fiap.tastytap_users.domain.user.User;
 
 import java.util.Optional;

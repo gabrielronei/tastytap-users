@@ -1,6 +1,6 @@
 package br.com.fiap.tastytap_users.presentation.user;
 
-import br.com.fiap.tastytap_users.application.user.create.NewUserCommand;
+import br.com.fiap.tastytap_users.applications.user.create.NewUserCommand;
 import br.com.fiap.tastytap_users.domain.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.Email;

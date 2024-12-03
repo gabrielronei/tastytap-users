@@ -1,8 +1,8 @@
 package br.com.fiap.tastytap_users.presentation.user;
 
-import br.com.fiap.tastytap_users.application.user.SimpleUserView;
-import br.com.fiap.tastytap_users.application.user.create.CreateUserUseCase;
-import br.com.fiap.tastytap_users.application.user.retrieve.FindUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.SimpleUserView;
+import br.com.fiap.tastytap_users.applications.user.create.CreateUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.retrieve.FindUserUseCase;
 import br.com.fiap.tastytap_users.domain.user.User;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

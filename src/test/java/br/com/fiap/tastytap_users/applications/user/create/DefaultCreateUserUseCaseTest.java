@@ -1,7 +1,7 @@
-package br.com.fiap.tastytap_users.application.user.create;
+package br.com.fiap.tastytap_users.applications.user.create;
 
-import br.com.fiap.tastytap_users.application.user.SimpleUserView;
-import br.com.fiap.tastytap_users.application.user.UserGateway;
+import br.com.fiap.tastytap_users.applications.user.SimpleUserView;
+import br.com.fiap.tastytap_users.applications.user.UserGateway;
 import br.com.fiap.tastytap_users.presentation.user.NewUserForm;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +10,6 @@ import org.mockito.Mockito;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 class DefaultCreateUserUseCaseTest {
     private UserGateway userGateway;
     private DefaultCreateUserUseCase defaultCreateUserUseCase;
@@ -23,7 +22,7 @@ class DefaultCreateUserUseCaseTest {
     }
 
     @Test
-    public void teste3() {
+    public void create__shouldReturnAnExceptionWhenUserExistsByEmail() {
         NewUserForm form = new NewUserForm("Gabriel", "gabriel@gmail.com", "52643331060");
 
         Mockito.when(this.userGateway.findByEmail(form.getEmail())).thenReturn(Optional.of(form.toUser()));
@@ -34,7 +33,7 @@ class DefaultCreateUserUseCaseTest {
     }
 
     @Test
-    public void teste4() {
+    public void create__shouldReturnAnExceptionWhenUserExistsByCPF() {
         NewUserForm form = new NewUserForm("Gabriel", "gabriel@gmail.com", "52643331060");
 
         Mockito.when(this.userGateway.findByEmail(form.getEmail())).thenReturn(Optional.empty());
@@ -46,7 +45,7 @@ class DefaultCreateUserUseCaseTest {
     }
 
     @Test
-    public void teste() {
+    public void create__shouldReturnAnEmptyUser() {
         NewUserForm form = new NewUserForm("Gabriel", "gabriel@gmail.com", "52643331060");
 
         Mockito.when(this.userGateway.findByEmail(form.getEmail())).thenReturn(Optional.empty());
@@ -56,7 +55,7 @@ class DefaultCreateUserUseCaseTest {
     }
 
     @Test
-    public void teste2() {
+    public void create__shouldReturnAnEmptyUserByCpf() {
         NewUserForm form = new NewUserForm("Gabriel", "gabriel@gmail.com", "52643331060");
 
         Mockito.when(this.userGateway.findByCPF(form.getDomainCPF())).thenReturn(Optional.empty());
@@ -66,7 +65,7 @@ class DefaultCreateUserUseCaseTest {
     }
 
     @Test
-    public void teste5() {
+    public void create__shouldReturnAnUser() {
         NewUserForm form = new NewUserForm("Gabriel", "gabriel@gmail.com", "52643331060");
 
         Mockito.when(this.userGateway.findByEmail(form.getEmail())).thenReturn(Optional.empty());

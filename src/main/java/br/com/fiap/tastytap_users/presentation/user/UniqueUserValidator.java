@@ -1,6 +1,6 @@
 package br.com.fiap.tastytap_users.presentation.user;
 
-import br.com.fiap.tastytap_users.application.user.UserGateway;
+import br.com.fiap.tastytap_users.applications.user.UserGateway;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;

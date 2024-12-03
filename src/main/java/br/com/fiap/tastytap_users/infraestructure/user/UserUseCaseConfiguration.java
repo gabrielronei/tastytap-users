@@ -1,9 +1,9 @@
 package br.com.fiap.tastytap_users.infraestructure.user;
 
-import br.com.fiap.tastytap_users.application.user.create.CreateUserUseCase;
-import br.com.fiap.tastytap_users.application.user.create.DefaultCreateUserUseCase;
-import br.com.fiap.tastytap_users.application.user.retrieve.DefaultFindUserUseCase;
-import br.com.fiap.tastytap_users.application.user.retrieve.FindUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.create.CreateUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.create.DefaultCreateUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.retrieve.DefaultFindUserUseCase;
+import br.com.fiap.tastytap_users.applications.user.retrieve.FindUserUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

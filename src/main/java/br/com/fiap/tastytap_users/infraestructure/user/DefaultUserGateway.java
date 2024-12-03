@@ -1,6 +1,6 @@
 package br.com.fiap.tastytap_users.infraestructure.user;
 
-import br.com.fiap.tastytap_users.application.user.UserGateway;
+import br.com.fiap.tastytap_users.applications.user.UserGateway;
 import br.com.fiap.tastytap_users.domain.user.CPF;
 import br.com.fiap.tastytap_users.domain.user.User;
 import org.springframework.stereotype.Service;

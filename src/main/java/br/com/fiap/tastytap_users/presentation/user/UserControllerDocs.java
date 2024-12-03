@@ -1,6 +1,6 @@
 package br.com.fiap.tastytap_users.presentation.user;
 
-import br.com.fiap.tastytap_users.application.user.SimpleUserView;
+import br.com.fiap.tastytap_users.applications.user.SimpleUserView;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
