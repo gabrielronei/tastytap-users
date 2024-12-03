@@ -52,4 +52,20 @@ class UserTest {
         User gab = new User("Gab", "gab@email.com", "17377288000");
         Assertions.assertThat(gab.getCpf()).isEqualTo("17377288000");
     }
+
+    @Test
+    void shouldReturnFalseIfUserIsNotEqualTheOtherUser() {
+        User user = new User("João", "joao@email.com", "12345678901");
+        Assertions.assertThat(user.equals(user)).isTrue();
+
+        Assertions.assertThat(user.equals(null)).isFalse();
+
+        Assertions.assertThat(user.equals("João")).isFalse();
+
+        User anotherUser = new User("João", "joao@email.com", "12345678901");
+        Assertions.assertThat(user.equals(anotherUser)).isTrue();
+
+        User maria = new User("Maria", "joao@email.com", "12345678901");
+        Assertions.assertThat(user.equals(maria)).isFalse();
+    }
 }
