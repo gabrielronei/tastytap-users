@@ -71,24 +71,6 @@ A instalação é bem simples, siga as seguintes etapas:
    ```
    http://localhost:8080/tastytap-users
    ```
-## Kubernetes
-Da para rodar localmente nossa arquitetura usando o minikube, siga os seguintes passos:
-1. Inicie o minikube
-   ```sh
-   minikube start
-   ```
-2. Entre na pasta do kubernetes dentro do nosso projeto
-   ```sh
-   cd kubernetes/
-   ```
-3. Agora execute o script
-   ```sh
-   bash configure.sh
-   ```
-4. Só acessar a url com ip do cluster que foi mostrado na execução do script
-   ```sh
-   http://IP_DO_CLUSTER:30000/
-   ```
 
 
 ## Exemplos de requests
