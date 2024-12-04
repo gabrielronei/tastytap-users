@@ -39,6 +39,6 @@ public class CreateUserCucumberTest {
 }
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = "pretty", features = "src/test/java/resources/features")
+@CucumberOptions(plugin = "pretty", features = "src/test/resources/features")
 class CreateUserRunnerTest {
 }
