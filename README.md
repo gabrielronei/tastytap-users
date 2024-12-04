@@ -69,7 +69,7 @@ A instalação é bem simples, siga as seguintes etapas:
    ```
 4. Para acessar a documentação no swagger, acesse em seu navegador.
    ```
-   http://localhost:8080/
+   http://localhost:8080/tastytap-users
    ```
 ## Kubernetes
 Da para rodar localmente nossa arquitetura usando o minikube, siga os seguintes passos:
